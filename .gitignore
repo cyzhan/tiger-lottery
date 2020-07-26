@@ -1,4 +1,5 @@
 .idea
+tiger-lottery.iml
 
 lottery-common/lottery-common.iml
 lottery-common/target
@@ -7,4 +8,4 @@ lottery-gaming/lottery-gaming.iml
 lottery-gaming/target
 
 lottery-gateway/lottery-gateway.iml
-lottery-gateway/targetgit
+lottery-geway/targetgit
