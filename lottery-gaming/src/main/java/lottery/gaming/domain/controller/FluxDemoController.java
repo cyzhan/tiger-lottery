@@ -46,8 +46,8 @@ public class FluxDemoController {
     @GetMapping(path= {"/test"}, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Mono<ResultVO> getAll(@RequestParam("pageIndex") @Min(1) Integer pageIndex,
                                  @RequestParam("pageSize") @Min(10) Integer pageSize) throws Exception {
-        System.out.println(String.format("pageIndex = %s, pageSize = %s", pageIndex, pageSize));
-        System.out.println(String.format("offSet = %s", (pageIndex-1)*pageSize));
+        System.out.printf("pageIndex = %s, pageSize = %s%n", pageIndex, pageSize);
+        System.out.printf("offSet = %s%n", (pageIndex-1)*pageSize);
         return Mono.just(fluxDemoService.getUsers());
     }
 
