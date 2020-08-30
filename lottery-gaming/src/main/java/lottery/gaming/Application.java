@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Import;
 public class Application {
 
     public static void main(String[] args) {
+        System.setProperty("Log4jContextSelector",
+                "org.apache.logging.log4j.core.async.AsyncLoggerContextSelector");
         SpringApplication springApplication = new SpringApplication(Application.class);
         springApplication.run(args);
     }

@@ -32,7 +32,7 @@ public class RedisDemoController {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
-    @PostMapping(path= {"/key"}, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @PostMapping(path= {"/key"}, produces = MediaType.APPLICATION_JSON_VALUE)
     public Mono<ResultVO> addKey(@RequestBody KeyValueVO keyValueVO) throws Exception {
         stringRedisTemplate.opsForValue().set(keyValueVO.getKey(), keyValueVO.getValue());
 //        stringRedisTemplate.execute(new RedisCallback<Object>() {
@@ -44,7 +44,7 @@ public class RedisDemoController {
         return Mono.just(ResultVO.ok());
     }
 
-    @GetMapping(path= {"/key/{key}"}, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @GetMapping(path= {"/key/{key}"}, produces = MediaType.APPLICATION_JSON_VALUE)
     public Mono<ResultVO> getByKey(@PathVariable String key) throws Exception {
         Optional<String> optional = Optional.ofNullable(stringRedisTemplate.opsForValue().get(key));
         Map<String, String> map = new HashMap<>();
@@ -54,7 +54,7 @@ public class RedisDemoController {
         }).orElseGet(() -> Mono.just(ResultVO.error(0, "key not found")));
     }
 
-    @PostMapping(path= {"/key/{key}/object"}, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @PostMapping(path= {"/key/{key}/object"}, produces = MediaType.APPLICATION_JSON_VALUE)
     public Mono<ResultVO> addKeyObject(@PathVariable String key, @RequestBody RedisDemoVO redisDemoVO) throws Exception {
         redisTemplate.opsForValue().set(key, redisDemoVO);
         return Mono.just(ResultVO.ok());
