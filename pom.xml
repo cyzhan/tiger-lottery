@@ -21,6 +21,7 @@
         <module>lottery-common</module>
         <module>lottery-gaming</module>
         <module>lottery-gateway</module>
+        <module>copycat</module>
     </modules>
 
     <properties>

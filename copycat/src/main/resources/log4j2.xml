@@ -7,15 +7,10 @@
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="%highlight{%d{yyyy.MM.dd 'at' HH:mm:ss z} %t %-5level - %msg%n}{FATAL=Bright Red, ERROR=Bright Magenta, WARN=Bright Yellow}"/>
         </Console>
-        <!-- socket 日志，输出日志到 Logstash 中做日志收集 -->
-<!--        <Socket name="Socket" host="127.0.0.1" port="5000" protocol="TCP">-->
-<!--            <PatternLayout pattern="%t %-5level - %msg%n"/>-->
-<!--        </Socket>-->
     </Appenders>
 
     <Loggers>
         <Root level="INFO">
-<!--            <appender-ref ref="Socket"/>-->
             <appender-ref ref="Console"/>
         </Root>
     </Loggers>
