@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="copycat.model.mapper.">
+<mapper namespace="copycat.model.mapper.ReplicationMapper">
     <insert id="addData" parameterType="list">
         INSERT INTO demo_slave.guest VALUES
-        <foreach collection="list" item="listItem" separator=",">
-            <foreach collection="list" item="obj"  separator="," open="(" close=")">
-                obj
-            </foreach>
+        <foreach collection="list" item="item" separator=",">
+            ${item}
         </foreach>
     </insert>
-
 </mapper>

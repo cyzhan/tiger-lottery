@@ -3,12 +3,10 @@ package copycat.domain.backgroud;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.github.shyiko.mysql.binlog.BinaryLogClient;
-import com.github.shyiko.mysql.binlog.event.Event;
-import com.github.shyiko.mysql.binlog.event.EventType;
-import com.github.shyiko.mysql.binlog.event.TableMapEventData;
-import com.github.shyiko.mysql.binlog.event.WriteRowsEventData;
+import com.github.shyiko.mysql.binlog.event.*;
 import com.github.shyiko.mysql.binlog.event.deserialization.ColumnType;
 import com.github.shyiko.mysql.binlog.event.deserialization.EventDeserializer;
+import copycat.model.mapper.ReplicationMapper;
 import copycat.model.vo.DbTableVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +32,9 @@ public class BinLogService {
 
     @Autowired
     private ObjectMapper objectMapper;
+
+    @Autowired
+    private ReplicationMapper replicationMapper;
 
     @PostConstruct
     public void init(){
@@ -69,30 +70,43 @@ public class BinLogService {
             break;
             case "WRITE_ROWS":{
                 WriteRowsEventData data = event.getData();
-//                data.getIncludedColumns();
                 DbTableVO tableVO = tableIdVOMap.get(data.getTableId());
-                List<List<Object>> insertData = new ArrayList<>();
+                List<String> rowsStr = new ArrayList<>();
+                StringBuilder stringBuilder = new StringBuilder();
                 data.getRows().forEach(row -> {
                     ArrayNode arrayNode = objectMapper.createArrayNode();
-                    List<Object> objects = new ArrayList<>();
+                    stringBuilder.append("(");
                     for (int i = 0; i < row.length; i++) {
-                        if (row[i] instanceof byte[]){
+                        if (row[i] instanceof byte[]) {
                             String s = new String((byte[]) row[i], StandardCharsets.UTF_8);
+                            stringBuilder.append("'").append(s).append("'");
                             arrayNode.add(s);
-                            objects.add(s);
-                      }
-                        else if (tableVO.getColumnTypes()[i] == ColumnType.TIMESTAMP_V2.getCode()){
+                        } else if (tableVO.getColumnTypes()[i] == ColumnType.TIMESTAMP_V2.getCode()) {
                             Date date = new Date(((Long) row[i]));
                             String dateString = sdf.format(date);
                             arrayNode.add(dateString);
-                            objects.add(dateString);
+                            stringBuilder.append("'").append(dateString).append("'");
                         } else {
                             arrayNode.add(Long.parseLong(row[i].toString()));
-                            objects.add(Long.parseLong(row[i].toString()));
+                            stringBuilder.append(row[i].toString());
+                        }
+
+                        if (i != row.length - 1) {
+                            stringBuilder.append(",");
                         }
                     }
+                    stringBuilder.append(")");
+                    rowsStr.add(stringBuilder.toString());
+                    stringBuilder.setLength(0);
                     logger.info("transfer data = {}", arrayNode.toPrettyString());
                 });
+                int affectedRows = replicationMapper.addData(rowsStr);
+                logger.info("replicated row = " + affectedRows);
+            }
+            break;
+            case  "UPDATE_ROWS":{
+                UpdateRowsEventData data = event.getData();
+//                EventType.
             }
             break;
         }
