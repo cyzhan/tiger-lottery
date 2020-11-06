@@ -1,0 +1,1258 @@
+<root>
+    <group name="A" id="sr:group:52525">
+        <competitor id="sr:competitor:2702" name="AS Roma" country="Italy" country_code="ITA" abbreviation="ROM"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6666"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3275" name="PFC CSKA Sofia" country="Bulgaria" country_code="BGR"
+                    abbreviation="CSK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6985"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2445" name="BSC Young Boys" country="Switzerland" country_code="CHE"
+                    abbreviation="YB" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="233258"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5287" name="FC CFR 1907 Cluj" country="Romania" country_code="ROU"
+                    abbreviation="CFR" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="545335"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="B" id="sr:group:52527">
+        <competitor id="sr:competitor:661" name="Molde FK" country="Norway" country_code="NOR" abbreviation="MFK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6786"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2055" name="SK Rapid Wien" country="Austria" country_code="AUT" abbreviation="SCR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51782"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3179" name="Dundalk FC" country="Ireland" country_code="IRL" abbreviation="DUN"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="121673"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:42" name="Arsenal FC" country="England" country_code="ENG" abbreviation="ARS"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="183810"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="C" id="sr:group:52529">
+        <competitor id="sr:competitor:2216" name="SK Slavia Prague" country="Czech Republic" country_code="CZE"
+                    abbreviation="SLA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6773"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2681" name="Bayer Leverkusen" country="Germany" country_code="DEU"
+                    abbreviation="LEV" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12308"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1661" name="OGC Nice" country="France" country_code="FRA" abbreviation="NIC"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="223173"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5202" name="Hapoel Be`er Sheva FC" country="Israel" country_code="ISR"
+                    abbreviation="HBS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="359975"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="D" id="sr:group:52531">
+        <competitor id="sr:competitor:3006" name="SL Benfica" country="Portugal" country_code="PRT" abbreviation="BEN"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6897"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2351" name="Glasgow Rangers" country="Scotland" country_code="SCO"
+                    abbreviation="RAN" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12307"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2901" name="Standard Liege" country="Belgium" country_code="BEL"
+                    abbreviation="STL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="46335"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3121" name="KKS Lech Poznan" country="Poland" country_code="POL"
+                    abbreviation="LPO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="372658"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="E" id="sr:group:52533">
+        <competitor id="sr:competitor:3251" name="PAOK Thessaloniki" country="Greece" country_code="GRC"
+                    abbreviation="PAO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6788"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2952" name="PSV Eindhoven" country="Netherlands" country_code="NLD"
+                    abbreviation="PSV" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12313"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3395" name="AC Omonia Nicosia" country="Cyprus" country_code="CYP"
+                    abbreviation="OMO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="131484"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:33779" name="Granada CF" country="Spain" country_code="ESP" abbreviation="GCF"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13369150"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="F" id="sr:group:52535">
+        <competitor id="sr:competitor:2039" name="HNK Rijeka" country="Croatia" country_code="HRV" abbreviation="RIJ"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6801"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2950" name="AZ Alkmaar" country="Netherlands" country_code="NLD"
+                    abbreviation="AZA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="374037"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2714" name="SSC Napoli" country="Italy" country_code="ITA" abbreviation="NAP"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1296782"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2824" name="Real Sociedad" country="Spain" country_code="ESP" abbreviation="RSO"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7261041"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="G" id="sr:group:52537">
+        <competitor id="sr:competitor:31" name="Leicester City FC" country="England" country_code="ENG"
+                    abbreviation="LEI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6626"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3250" name="AEK Athens" country="Greece" country_code="GRC" abbreviation="AEK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6655"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2999" name="SC Braga" country="Portugal" country_code="PRT" abbreviation="BRA"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="408323"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5987" name="FC Zorya Lugansk" country="Ukraine" country_code="UKR"
+                    abbreviation="ZOR" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7261049"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="H" id="sr:group:52539">
+        <competitor id="sr:competitor:2352" name="Celtic Glasgow" country="Scotland" country_code="SCO"
+                    abbreviation="CEL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6714"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1643" name="LOSC Lille" country="France" country_code="FRA" abbreviation="LIL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="65986"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2692" name="AC Milan" country="Italy" country_code="ITA" abbreviation="ACM"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="67378"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2218" name="AC Sparta Prague" country="Czech Republic" country_code="CZE"
+                    abbreviation="SPA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="125774"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="I" id="sr:group:52541">
+        <competitor id="sr:competitor:2819" name="Villarreal CF" country="Spain" country_code="ESP" abbreviation="VIL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="116155"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5198" name="Maccabi Tel Aviv FC" country="Israel" country_code="ISR"
+                    abbreviation="MTA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="142903"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5962" name="Qarabag FK" country="Azerbaijan" country_code="AZE" abbreviation="QAR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="369945"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3076" name="Sivasspor" country="Turkey" country_code="TUR" abbreviation="SIV"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1296780"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="J" id="sr:group:52543">
+        <competitor id="sr:competitor:33" name="Tottenham Hotspur FC" country="England" country_code="ENG"
+                    abbreviation="TOT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="863278"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:43840" name="PFC Ludogorets 1945 Razgrad" country="Bulgaria" country_code="BGR"
+                    abbreviation="LUD" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6736767"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2058" name="LASK" country="Austria" country_code="AUT" abbreviation="ASK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="11013731"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2889" name="Royal Antwerp FC" country="Belgium" country_code="BEL"
+                    abbreviation="ANT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12379146"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="K" id="sr:group:52545">
+        <competitor id="sr:competitor:2959" name="Feyenoord Rotterdam" country="Netherlands" country_code="NLD"
+                    abbreviation="FEY" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6799"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2032" name="GNK Dinamo Zagreb" country="Croatia" country_code="HRV"
+                    abbreviation="DIN" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6808"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2325" name="CSKA Moscow" country="Russia" country_code="RUS" abbreviation="CSK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6987"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2076" name="Wolfsberger AC" country="Austria" country_code="AUT"
+                    abbreviation="WAC" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7984885"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group name="L" id="sr:group:52547">
+        <competitor id="sr:competitor:2219" name="FC Slovan Liberec" country="Czech Republic" country_code="CZE"
+                    abbreviation="SLO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6614"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2903" name="KAA Gent" country="Belgium" country_code="BEL" abbreviation="KAA"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6963"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5149" name="FK Crvena Zvezda" country="Serbia" country_code="SRB"
+                    abbreviation="CRZ" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7331"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2569" name="TSG Hoffenheim" country="Germany" country_code="DEU"
+                    abbreviation="TSG" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="10047238"/>
+            </reference_ids>
+        </competitor>
+    </group>
+    <group>
+        <competitor id="sr:competitor:656" name="Bodo/Glimt" country="Norway" country_code="NOR" abbreviation="BOG"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="372667"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1161" name="Rosenborg BK" country="Norway" country_code="NOR" abbreviation="RBK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12927"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1164" name="Viking FK" country="Norway" country_code="NOR" abbreviation="VIK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51802"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1284" name="FC Copenhagen" country="Denmark" country_code="DNK" abbreviation="FCC"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="65956"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1291" name="AGF Aarhus" country="Denmark" country_code="DNK" abbreviation="AGF"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="30131"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1295" name="Sonderjyske" country="Denmark" country_code="DNK" abbreviation="SON"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="8783589"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1682" name="Stade Reims" country="France" country_code="FRA" abbreviation="SDR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13369080"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1758" name="Hammarby IF" country="Sweden" country_code="SWE" abbreviation="HIF"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="372661"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1759" name="Djurgardens IF" country="Sweden" country_code="SWE" abbreviation="DJU"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="121682"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1761" name="IFK Goteborg" country="Sweden" country_code="SWE" abbreviation="IFK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="121664"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1892" name="Malmo FF" country="Sweden" country_code="SWE" abbreviation="MAL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="237337"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1894" name="FH Hafnarfjordur" country="Iceland" country_code="ISL"
+                    abbreviation="HAF" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="113176"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1901" name="Breidablik Kopavogur" country="Iceland" country_code="ISL"
+                    abbreviation="KOP" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5458490"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1902" name="KR Reykjavik" country="Iceland" country_code="ISL" abbreviation="KRR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="235380"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1908" name="Vikingur Reykjavik" country="Iceland" country_code="ISL"
+                    abbreviation="VIK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7945346"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1916" name="Budapest Honved FC" country="Hungary" country_code="HUN"
+                    abbreviation="HON" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="113187"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:1926" name="Fehervar FC" country="Hungary" country_code="HUN" abbreviation="FEH"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="217228"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2036" name="HNK Hajduk Split" country="Croatia" country_code="HRV"
+                    abbreviation="HAJ" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="65945"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2040" name="NK Osijek" country="Croatia" country_code="HRV" abbreviation="OSI"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6975"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2075" name="TSV Hartberg" country="Austria" country_code="AUT" abbreviation="HTB"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13369194"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2205" name="FK Jablonec" country="Czech Republic" country_code="CZE"
+                    abbreviation="FKJ" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1050409"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2244" name="Kuopion Palloseura" country="Finland" country_code="FIN"
+                    abbreviation="KUP" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5756752"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2247" name="FC Inter Turku" country="Finland" country_code="FIN"
+                    abbreviation="INT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="545344"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2260" name="FC Honka" country="Finland" country_code="FIN" abbreviation="HON"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1041835"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2315" name="FK Dinamo Moscow" country="Russia" country_code="RUS"
+                    abbreviation="DMO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6772"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2326" name="FC Rostov" country="Russia" country_code="RUS" abbreviation="ROS"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7261033"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2346" name="Motherwell FC" country="Scotland" country_code="SCO"
+                    abbreviation="MOT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1294469"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2355" name="Aberdeen FC" country="Scotland" country_code="SCO" abbreviation="ABE"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="121683"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2397" name="MFK Ruzomberok" country="Slovakia" country_code="SVK"
+                    abbreviation="RUZ" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="46380"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2402" name="MSK Zilina" country="Slovakia" country_code="SVK" abbreviation="ZIL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="250011"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2404" name="SK Slovan Bratislava" country="Slovakia" country_code="SVK"
+                    abbreviation="SLB" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6807"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2410" name="NS Mura" country="Slovenia" country_code="SVN" abbreviation="MUR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6248776"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2413" name="NK Celje" country="Slovenia" country_code="SVN" abbreviation="CEL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="30335"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2416" name="NK Olimpija Ljubljana" country="Slovenia" country_code="SVN"
+                    abbreviation="OLI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6973"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2420" name="NK Maribor" country="Slovenia" country_code="SVN" abbreviation="MAR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="369934"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2442" name="FC St. Gallen 1879" country="Switzerland" country_code="CHE"
+                    abbreviation="STG" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6950"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2448" name="Servette FC" country="Switzerland" country_code="CHE"
+                    abbreviation="SER" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="66096"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2463" name="FC Vaduz" country="Switzerland" country_code="CHE" abbreviation="VAD"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51805"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2501" name="FC Basel 1893" country="Switzerland" country_code="CHE"
+                    abbreviation="FCB" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6763"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2524" name="VfL Wolfsburg" country="Germany" country_code="DEU" abbreviation="WOB"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="33521"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2898" name="Royal Charleroi SC" country="Belgium" country_code="BEL"
+                    abbreviation="RCH" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="555299"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:2961" name="Willem II Tilburg" country="Netherlands" country_code="NLD"
+                    abbreviation="WIL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="116161"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3001" name="Sporting CP" country="Portugal" country_code="PRT" abbreviation="SPO"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="65935"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3036" name="Rio Ave FC" country="Portugal" country_code="PRT" abbreviation="RAV"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7261031"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3050" name="Besiktas JK" country="Turkey" country_code="TUR" abbreviation="BES"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="128049"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3061" name="Galatasaray SK" country="Turkey" country_code="TUR" abbreviation="GAL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="295608"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3106" name="Legia Warszawa" country="Poland" country_code="POL" abbreviation="LEG"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51734"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3170" name="Derry City FC" country="Ireland" country_code="IRL" abbreviation="DER"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="233278"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3173" name="Bohemians Dublin FC" country="Ireland" country_code="IRL"
+                    abbreviation="BOH" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6870"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3177" name="Shamrock Rovers" country="Ireland" country_code="IRL"
+                    abbreviation="SHA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="122654"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3241" name="OFI Crete" country="Greece" country_code="GRC" abbreviation="OFI"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6668"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3252" name="Aris Thessaloniki" country="Greece" country_code="GRC"
+                    abbreviation="ARI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="233250"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3272" name="PFC Lokomotiv Plovdiv" country="Bulgaria" country_code="BGR"
+                    abbreviation="LOK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="577746"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3274" name="PFC Slavia Sofia" country="Bulgaria" country_code="BGR"
+                    abbreviation="SLA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="8828520"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3301" name="Fotbal Club FCSB" country="Romania" country_code="ROU"
+                    abbreviation="FCS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="60423"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3342" name="FCI Levadia Tallinn" country="Estonia" country_code="EST"
+                    abbreviation="LEV" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="123498"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3346" name="FC Flora Tallinn" country="Estonia" country_code="EST"
+                    abbreviation="FLO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="46345"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3350" name="Bate Borisov" country="Belarus" country_code="BLR" abbreviation="BAT"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51788"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3353" name="FC Brest" country="Belarus" country_code="BLR" abbreviation="BRE"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1050414"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3357" name="FC Shakhter Soligorsk" country="Belarus" country_code="BLR"
+                    abbreviation="SHS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="217250"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3361" name="FC Dinamo Minsk" country="Belarus" country_code="BLR"
+                    abbreviation="DMI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="30341"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3398" name="APOEL Nikosia" country="Cyprus" country_code="CYP" abbreviation="APO"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6791"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3402" name="Apollon Limassol" country="Cyprus" country_code="CYP"
+                    abbreviation="APO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51729"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:3403" name="Anorthosis Famagusta" country="Cyprus" country_code="CYP"
+                    abbreviation="ANO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="30160"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:4502" name="FC Viktoria Plzen" country="Czech Republic" country_code="CZE"
+                    abbreviation="VIK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5493090"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:4901" name="KS Cracovia" country="Poland" country_code="POL" abbreviation="CRA"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1282839"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:4912" name="Connah`s Quay Nomads FC" country="Wales" country_code="WAL"
+                    abbreviation="CQN" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="8828818"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:4921" name="The New Saints FC" country="Wales" country_code="WAL"
+                    abbreviation="TNS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51683"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5143" name="FK Buducnost" country="Montenegro" country_code="MNE"
+                    abbreviation="BUD" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="382028"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5150" name="FK Vojvodina" country="Serbia" country_code="SRB" abbreviation="VOJ"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1055968"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5152" name="FK Partizan" country="Serbia" country_code="SRB" abbreviation="PAR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6720"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5170" name="FC Lokomotivi Tbilisi" country="Georgia" country_code="GEO"
+                    abbreviation="TBI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51596"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5171" name="FC Dinamo Tbilisi" country="Georgia" country_code="GEO"
+                    abbreviation="TBI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="46371"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5172" name="FC Kairat Almaty" country="Kazakhstan" country_code="KAZ"
+                    abbreviation="ALM" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="121595"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5173" name="FC Sheriff Tiraspol" country="Moldova" country_code="MDA"
+                    abbreviation="SHF" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5230588"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5178" name="HSK Zrinjski Mostar" country="Bosnia &amp; Herzegovina"
+                    country_code="BIH" abbreviation="ZRI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="803740"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5179" name="Glentoran FC" country="Northern Ireland" country_code="NIR"
+                    abbreviation="GLE" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51843"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5185" name="B36 Torshavn" country="Faroe Islands" country_code="FRO"
+                    abbreviation="B36" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="46356"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5187" name="HB Torshavn" country="Faroe Islands" country_code="FRO"
+                    abbreviation="HB" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="555415"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5189" name="NSI Runavik" country="Faroe Islands" country_code="FRO"
+                    abbreviation="NSI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="233298"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5194" name="KI Klaksvik" country="Faroe Islands" country_code="FRO"
+                    abbreviation="KI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="123653"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5195" name="KF Tirana" country="Albania" country_code="ALB" abbreviation="KFT"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="123712"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5197" name="Maccabi Haifa FC" country="Israel" country_code="ISR"
+                    abbreviation="MAH" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6729"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5204" name="Beitar Jerusalem FC" country="Israel" country_code="ISR"
+                    abbreviation="BEI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6789"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5215" name="FK Neftchi Baku" country="Azerbaijan" country_code="AZE"
+                    abbreviation="NEB" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="560106"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5235" name="FK Borac Banja Luka" country="Bosnia &amp; Herzegovina"
+                    country_code="BIH" abbreviation="BBL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5458495"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5237" name="FK Sarajevo" country="Bosnia &amp; Herzegovina" country_code="BIH"
+                    abbreviation="FKS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51794"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5240" name="FK Zeljeznicar Sarajevo" country="Bosnia &amp; Herzegovina"
+                    country_code="BIH" abbreviation="ZES" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="128051"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5270" name="Coleraine FC" country="Northern Ireland" country_code="NIR"
+                    abbreviation="COL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="113533"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5272" name="Linfield FC" country="Northern Ireland" country_code="NIR"
+                    abbreviation="LIN" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="121652"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5331" name="Hibernians FC" country="Malta" country_code="MLT" abbreviation="HIB"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="30150"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5332" name="Valletta FC" country="Malta" country_code="MLT" abbreviation="VAL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="113178"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5343" name="FK Suduva Marijampole" country="Lithuania" country_code="LTU"
+                    abbreviation="SUD" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="121656"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5345" name="Vilnius FK Zalgiris" country="Lithuania" country_code="LTU"
+                    abbreviation="ZAL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51593"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5353" name="Valmiera FK/BJSS" country="Latvia" country_code="LVA"
+                    abbreviation="VAL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15297211"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5354" name="FK Ventspils" country="Latvia" country_code="LVA" abbreviation="VEN"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51792"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5366" name="FC Ordabasy" country="Kazakhstan" country_code="KAZ"
+                    abbreviation="ORD" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6251073"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5378" name="Union Titus Petange" country="Luxembourg" country_code="LUX"
+                    abbreviation="UTP" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="554442"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5407" name="FK Sileks Kratovo" country="North Macedonia" country_code="MKD"
+                    abbreviation="SIK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="369933"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5412" name="FK Renova" country="North Macedonia" country_code="MKD"
+                    abbreviation="FK " gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1282948"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5413" name="FK Shkendija" country="North Macedonia" country_code="MKD"
+                    abbreviation="SHK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6248771"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:5417" name="KF Teuta" country="Albania" country_code="ALB" abbreviation="TEU"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="113179"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:6224" name="FK Sutjeska" country="Montenegro" country_code="MNE"
+                    abbreviation="SUT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="217234"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:6225" name="FK Zeta Golubovci" country="Montenegro" country_code="MNE"
+                    abbreviation="ZET" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="577747"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:6362" name="Alanyaspor" country="Turkey" country_code="TUR" abbreviation="ALA"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13370198"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:7605" name="FC Differdange 03" country="Luxembourg" country_code="LUX"
+                    abbreviation="FC " gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1042034"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:7711" name="FC Santa Coloma" country="Andorra" country_code="AND"
+                    abbreviation="FCC" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="51684"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:7918" name="GKS Piast Gliwice" country="Poland" country_code="POL"
+                    abbreviation="PGL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6680391"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:8091" name="Nomme Kalju FC" country="Estonia" country_code="EST"
+                    abbreviation="KAL" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1668327"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:22386" name="Tampereen Ilves" country="Finland" country_code="FIN"
+                    abbreviation="ILV" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="11009269"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:23833" name="DAC 1904 Dunajska Streda" country="Slovakia" country_code="SVK"
+                    abbreviation="DDS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="11009281"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:24036" name="Keshla FK" country="Azerbaijan" country_code="AZE" abbreviation="KES"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="1041844"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:24798" name="FC Botosani" country="Romania" country_code="ROU" abbreviation="BOT"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7945399"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:25480" name="FC Desna Chernihiv" country="Ukraine" country_code="UKR"
+                    abbreviation="DES" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15644361"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:25596" name="Puskas Akademia FC" country="Hungary" country_code="HUN"
+                    abbreviation="PUS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13369802"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:25929" name="CS Fola Esch" country="Luxembourg" country_code="LUX"
+                    abbreviation="FES" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5756745"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:32476" name="Paide Linnameeskond" country="Estonia" country_code="EST"
+                    abbreviation="PAI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15296811"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:33584" name="Floriana FC" country="Malta" country_code="MLT" abbreviation="FLO"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5756749"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:33817" name="FC Shirak Gyumri" country="Armenia" country_code="ARM"
+                    abbreviation="FSG" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="30768"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:35186" name="Barry Town United FC" country="Wales" country_code="WAL"
+                    abbreviation="BAT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12378648"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:36142" name="FC Kaisar Kyzylorda" country="Kazakhstan" country_code="KAZ"
+                    abbreviation="KKY" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15473919"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:36155" name="FC Astana" country="Kazakhstan" country_code="KAZ" abbreviation="FCA"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5756753"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:36195" name="SP Tre Fiori" country="San Marino" country_code="SMR"
+                    abbreviation="TRF" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5458489"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:36201" name="FC Progres Niederkorn" country="Luxembourg" country_code="LUX"
+                    abbreviation="NIE" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7945345"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:36246" name="NK Lokomotiva Zagreb" country="Croatia" country_code="HRV"
+                    abbreviation="LOK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6680388"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:36255" name="Bala Town FC" country="Wales" country_code="WAL" abbreviation="BAT"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6680380"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:36280" name="FC Sfintul Gheorghe" country="Moldova" country_code="MDA"
+                    abbreviation="SFI" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13376221"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:37121" name="KF Laci" country="Albania" country_code="ALB" abbreviation="KFL"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5458442"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:37297" name="FC Dinamo Batumi" country="Georgia" country_code="GEO"
+                    abbreviation="BAT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7945358"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:37860" name="SP La Fiorita" country="San Marino" country_code="SMR"
+                    abbreviation="LAF" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6248775"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:37862" name="Tre Penne" country="San Marino" country_code="SMR" abbreviation="TRP"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="5497548"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:37946" name="Inter Club de Escaldes" country="Andorra" country_code="AND"
+                    abbreviation="ESC" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15473979"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:37948" name="UE Engordany" country="Andorra" country_code="AND" abbreviation="ENG"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="10986081"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:37958" name="FK Iskra Danilovgrad" country="Montenegro" country_code="MNE"
+                    abbreviation="IDA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15289413"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:43904" name="FC Dinamo Auto" country="Moldova" country_code="MDA"
+                    abbreviation="DIA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13374599"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:44497" name="Sumgayit FK" country="Azerbaijan" country_code="AZE"
+                    abbreviation="SUM" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15297315"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:53064" name="KS Kukesi" country="Albania" country_code="ALB" abbreviation="KUK"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="6680383"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:67966" name="Alashkert" country="Armenia" country_code="ARM" abbreviation="ALA"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7945362"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:68718" name="FK Rigas Futbola Skola" country="Latvia" country_code="LVA"
+                    abbreviation="RFS" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12379060"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:80741" name="FK Kauno Zalgiris" country="Lithuania" country_code="LTU"
+                    abbreviation="KAZ" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12408338"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:80811" name="Sirens FC" country="Malta" country_code="MLT" abbreviation="SIR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15297251"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:116223" name="Universitatea Craiova 1948 CS" country="Romania" country_code="ROU"
+                    abbreviation="CSU" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="9956856"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:116312" name="FC Saburtalo Tbilisi" country="Georgia" country_code="GEO"
+                    abbreviation="SAT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12569329"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:126298" name="Europa FC" country="Gibraltar" country_code="GIB" abbreviation="EUR"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7261035"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:126304" name="Lincoln Red Imps FC" country="Gibraltar" country_code="GIB"
+                    abbreviation="LIN" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="9848412"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:126312" name="St Joseph`s FC" country="Gibraltar" country_code="GIB"
+                    abbreviation="STJ" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="9848458"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:136548" name="FK Shkupi" country="North Macedonia" country_code="MKD"
+                    abbreviation="SHK" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="11009277"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:162368" name="Riga FC" country="Latvia" country_code="LVA" abbreviation="RFC"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="11041107"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:167232" name="Petrocub Hincesti" country="Moldova" country_code="MDA"
+                    abbreviation="PEH" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="11009317"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:213176" name="Kolos Kovalivka" country="Ukraine" country_code="UKR"
+                    abbreviation="KKO" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13370204"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:277829" name="FC Prishtina" country="Kosovo" country_code="KOS" abbreviation="PRI"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="9848460"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:277835" name="KF Drita" country="Kosovo" country_code="KOS" abbreviation="DRI"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="11019564"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:277839" name="SC Gjilani" country="Kosovo" country_code="KOS" abbreviation="GJI"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15289415"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:364472" name="FC Ararat-Armenia" country="Armenia" country_code="ARM"
+                    abbreviation="ARA" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="12514565"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:364474" name="FC Noah" country="Armenia" country_code="ARM" abbreviation="FCN"
+                    gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="13375347"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:368638" name="FK TSC Backa Topola" country="Serbia" country_code="SRB"
+                    abbreviation="BAT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="15297281"/>
+            </reference_ids>
+        </competitor>
+        <competitor id="sr:competitor:547277" name="FK Riteriai" country="Lithuania" country_code="LTU"
+                    abbreviation="RIT" gender="male">
+            <reference_ids>
+                <reference_id name="betradar" value="7945359"/>
+            </reference_ids>
+        </competitor>
+    </group>
+</root>

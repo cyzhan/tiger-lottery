@@ -1,6 +1,7 @@
 package lottery.gaming.core;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import lottery.gaming.config.MessageInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +14,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.validation.beanvalidation.MethodValidationPostProcessor;
+import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -29,7 +31,7 @@ public class GamingWebMvcConfigure implements WebMvcConfigurer {
         return new MethodValidationPostProcessor();
     }
 
-    @Bean
+    @Bean("objectMapper")
     public ObjectMapper getObjectMapper(){
         return new ObjectMapper();
     }
@@ -49,6 +51,17 @@ public class GamingWebMvcConfigure implements WebMvcConfigurer {
         redisTemplate.setHashKeySerializer(stringRedisSerializer);
         redisTemplate.setHashValueSerializer(stringRedisSerializer);
         return redisTemplate;
+    }
+
+    @Bean
+    public WebClient getWebClient(){
+//        return WebClient.create("http://localhost:8080");
+        return WebClient.create("https://api.betradar.com");
+    }
+
+    @Bean("xmlMapper")
+    public XmlMapper xmlMapper(){
+        return new XmlMapper();
     }
 
 }

@@ -5,5 +5,4 @@
         INSERT INTO sandbox.`user` (name, age, password, create_time, update_time)
         VALUES (#{name}, #{age}, #{password}, UNIX_TIMESTAMP(), UNIX_TIMESTAMP())
     </insert>
-
 </mapper>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tournament_info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2020-11-04T03:35:57+00:00" xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.sportradar.com/sportsapi/v1/unified http://schemas.sportradar.com/bsa/unified/v1/xml/endpoints/unified/tournament_info.xsd">
+    <tournament id="sr:tournament:32969" name="Liga de Expansion MX, Apertura">
+        <sport id="sr:sport:1" name="Soccer"/>
+        <category id="sr:category:12" name="Mexico" country_code="MEX"/>
+        <current_season id="sr:season:77729" name="Liga de Expansion Mx 2020, Apertura" start_date="2020-08-18" end_date="2020-12-21" year="2021"/>
+    </tournament>
+    <season id="sr:season:77729" name="Liga de Expansion Mx 2020, Apertura" start_date="2020-08-18" end_date="2020-12-21" year="2021" tournament_id="sr:tournament:32969"/>
+    <round type="group" number="13"/>
+    <season_coverage_info season_id="sr:season:77729" scheduled="124" played="99" max_coverage_level="bronze" max_covered="99" min_coverage_level="bronze"/>
+    <coverage_info live_coverage="false"/>
+    <groups>
+        <group name="Apertura" id="sr:group:51215">
+            <competitor id="sr:competitor:5291" name="CSD Dorados Sinaloa" country="Mexico" country_code="MEX" abbreviation="DRD" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="331327"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:36526" name="CF Correcaminos UAT" country="Mexico" country_code="MEX" abbreviation="COR" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="331328"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:36531" name="Venados  FC" country="Mexico" country_code="MEX" abbreviation="VDS" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="331335"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:728055" name="CD Tapatio" country="Mexico" country_code="MEX" abbreviation="CD " gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="331336"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:36529" name="Atletico Morelia SA CV" country="Mexico" country_code="MEX" abbreviation="ATM" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="580306"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:270565" name="Tampico Madero FC" country="Mexico" country_code="MEX" abbreviation="TAM" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="580313"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:36535" name="Leones Negros UDEG" country="Mexico" country_code="MEX" abbreviation="LEN" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="5192772"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:53121" name="Club Celaya FC" country="Mexico" country_code="MEX" abbreviation="CEL" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="5796490"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:109859" name="Alebrijes de Oaxaca FC" country="Mexico" country_code="MEX" abbreviation="ADO" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="6735603"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:159946" name="CD Mineros de Zacatecas" country="Mexico" country_code="MEX" abbreviation="MZA" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="7285851"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:1943" name="Atlante FC" country="Mexico" country_code="MEX" abbreviation="ATL" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="7287355"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:215050" name="Cimarrones de Sonora FC" country="Mexico" country_code="MEX" abbreviation="CIM" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="7934117"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:728019" name="Cancun FC" country="Mexico" country_code="MEX" abbreviation="CAN" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="15054801"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:728053" name="Pumas de Tabasco" country="Mexico" country_code="MEX" abbreviation="PUM" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="15054959"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:421975" name="Tepatitlan FC" country="Mexico" country_code="MEX" abbreviation="TEP" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="15055095"/>
+                </reference_ids>
+            </competitor>
+            <competitor id="sr:competitor:399447" name="Tlaxcala FC" country="Mexico" country_code="MEX" abbreviation="TLA" gender="male">
+                <reference_ids>
+                    <reference_id name="betradar" value="15055133"/>
+                </reference_ids>
+            </competitor>
+        </group>
+    </groups>
+</tournament_info>
