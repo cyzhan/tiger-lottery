@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface ReplicationMapper {
 
-    int addData(List<List<Object>> rows);
+    int addData(List<String> rows);
 
 }
