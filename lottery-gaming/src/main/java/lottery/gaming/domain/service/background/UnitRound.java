@@ -50,7 +50,7 @@ public class UnitRound {
         ids.forEach(id-> {
             webClient.get()
                     .uri("v1/sports/{lang}/tournaments/{type}:tournament:{id}/info.xml", "en", "sr", id)
-                    .header("x-access-token", "cBrk0GvJEO21qPhy8Q")
+                    .header("x-access-token", "")
                     .retrieve()
                     .bodyToMono(String.class)
                     .subscribe(s -> {
