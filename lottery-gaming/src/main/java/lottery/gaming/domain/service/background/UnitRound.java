@@ -29,7 +29,7 @@ public class UnitRound {
     @Autowired
     private WebClient webClient;
 
-    @PostConstruct
+    //@PostConstruct
     public void aaa(){
 //        ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(1);
 //        executorService.scheduleAtFixedRate(this::b, 5,120, TimeUnit.SECONDS);

@@ -39,7 +39,7 @@ public class BinLogService {
     @PostConstruct
     public void init(){
         try {
-            BinaryLogClient client = new BinaryLogClient("127.0.0.1", 3306, "repliuser", "asdf9876");
+            BinaryLogClient client = new BinaryLogClient("mysql-lekima-demo.ceshi22.com", 3306, "sptlekima", "k5UVKriq");
 //            client.setBinlogFilename("mysql-bin.000001");
 //            client.setBinlogPosition(4);
             EventDeserializer eventDeserializer = new EventDeserializer();
@@ -68,7 +68,42 @@ public class BinLogService {
                 tableIdVOMap.putIfAbsent(data.getTableId(), new DbTableVO(data));
             }
             break;
-            case "WRITE_ROWS":{
+//            case "UPDATE_ROWS":
+//            {
+//                WriteRowsEventData data = event.getData();
+//                DbTableVO tableVO = tableIdVOMap.get(data.getTableId());
+//                List<String> rowsStr = new ArrayList<>();
+//                StringBuilder stringBuilder = new StringBuilder();
+//                data.getRows().forEach(row -> {
+//                    ArrayNode arrayNode = objectMapper.createArrayNode();
+//                    stringBuilder.append("(");
+//                    for (int i = 0; i < row.length; i++) {
+//                        if (row[i] instanceof byte[]) {
+//                            String s = new String((byte[]) row[i], StandardCharsets.UTF_8);
+//                            stringBuilder.append("'").append(s).append("'");
+//                            arrayNode.add(s);
+//                        }
+////                        else if (tableVO.getColumnTypes()[i] == ColumnType.TIMESTAMP_V2.getCode()) {
+////                            Date date = new Date(((Long) row[i]));
+////                            String dateString = sdf.format(date);
+////                            arrayNode.add(dateString);
+////                            stringBuilder.append("'").append(dateString).append("'");
+////                        } else {
+////                            arrayNode.add(Long.parseLong(row[i].toString()));
+////                            stringBuilder.append(row[i].toString());
+////                        }
+//
+//                        if (i != row.length - 1) {
+//                            stringBuilder.append(",");
+//                        }
+//                    }
+//                    stringBuilder.append(")");
+//                    rowsStr.add(stringBuilder.toString());
+//                    stringBuilder.setLength(0);
+//                    logger.info("transfer data = {}", arrayNode.toPrettyString());
+//                });
+            case "WRITE_ROWS":
+                {
                 WriteRowsEventData data = event.getData();
                 DbTableVO tableVO = tableIdVOMap.get(data.getTableId());
                 List<String> rowsStr = new ArrayList<>();
@@ -81,15 +116,16 @@ public class BinLogService {
                             String s = new String((byte[]) row[i], StandardCharsets.UTF_8);
                             stringBuilder.append("'").append(s).append("'");
                             arrayNode.add(s);
-                        } else if (tableVO.getColumnTypes()[i] == ColumnType.TIMESTAMP_V2.getCode()) {
-                            Date date = new Date(((Long) row[i]));
-                            String dateString = sdf.format(date);
-                            arrayNode.add(dateString);
-                            stringBuilder.append("'").append(dateString).append("'");
-                        } else {
-                            arrayNode.add(Long.parseLong(row[i].toString()));
-                            stringBuilder.append(row[i].toString());
                         }
+//                        else if (tableVO.getColumnTypes()[i] == ColumnType.TIMESTAMP_V2.getCode()) {
+//                            Date date = new Date(((Long) row[i]));
+//                            String dateString = sdf.format(date);
+//                            arrayNode.add(dateString);
+//                            stringBuilder.append("'").append(dateString).append("'");
+//                        } else {
+//                            arrayNode.add(Long.parseLong(row[i].toString()));
+//                            stringBuilder.append(row[i].toString());
+//                        }
 
                         if (i != row.length - 1) {
                             stringBuilder.append(",");
@@ -100,15 +136,15 @@ public class BinLogService {
                     stringBuilder.setLength(0);
                     logger.info("transfer data = {}", arrayNode.toPrettyString());
                 });
-                int affectedRows = replicationMapper.addData(rowsStr);
-                logger.info("replicated row = " + affectedRows);
+//                int affectedRows = replicationMapper.addData(rowsStr);
+//                logger.info("replicated row = " + affectedRows);
             }
             break;
-            case  "UPDATE_ROWS":{
-                UpdateRowsEventData data = event.getData();
-//                EventType.
-            }
-            break;
+//            case  "UPDATE_ROWS":{
+//                UpdateRowsEventData data = event.getData();
+////                EventType.
+//            }
+//            break;
         }
     }
 }
