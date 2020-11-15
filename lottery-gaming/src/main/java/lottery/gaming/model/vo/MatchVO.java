@@ -10,7 +10,7 @@ public class MatchVO {
 
     private int awayId;
 
-    private long scheduled;
+    private String scheduled;
 
     private Integer bet188Id;
 
@@ -50,11 +50,11 @@ public class MatchVO {
         this.awayId = awayId;
     }
 
-    public long getScheduled() {
+    public String getScheduled() {
         return scheduled;
     }
 
-    public void setScheduled(long scheduled) {
+    public void setScheduled(String scheduled) {
         this.scheduled = scheduled;
     }
 

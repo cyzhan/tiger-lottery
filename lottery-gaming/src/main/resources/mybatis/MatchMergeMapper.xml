@@ -4,27 +4,57 @@
     <update id="updateMatch" parameterType="lottery.gaming.model.vo.MatchVO">
         UPDATE inno_odds.refactor_prematch rp
         <set>
-            <if test="match.bet188Id != null">
-                rp.bet188_id = #{match.bet188Id},
+            <if test="matchVO2.bet188Id != null">
+                rp.bet188_id = #{matchVO2.bet188Id},
             </if>
-            <if test="match.betradarId != null">
-                rp.betradar_id = = #{match.betradarId},
+            <if test="matchVO2.betradarId != null">
+                rp.betradar_id = #{matchVO2.betradarId},
             </if>
-            <if test="match.betgeniusId != null">
-                rp.betgenius_id = #{match.betgeniusId}
+            <if test="matchVO2.betgeniusId != null">
+                rp.betgenius_id = #{matchVO2.betgeniusId}
             </if>
         </set>
-        WHERE id = #{id}
+        WHERE id = #{matchId1}
     </update>
     <update id="updateSourceMatchRef">
-        UPDATE inno_odds.${source} SET ref_id = #{refId} WHERE id = #{matchId}
+        UPDATE inno_odds.${sourceTable} a
+        INNER JOIN inno_odds.refactor_prematch b ON a.ref_id = b.id
+        SET a.ref_id = #{newRefId}
+        WHERE b.id = #{mainMatchId}
     </update>
     <select id="getMatches" resultType="lottery.gaming.model.vo.MatchVO">
-        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.bet188_id, rp.betradar_id, rp.betgenius_id
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.scheduled, rp.bet188_id, rp.betradar_id, rp.betgenius_id
         FROM inno_odds.refactor_prematch rp
-        WHERE id IN (#{id1}, #{id2});
+        WHERE id IN (#{matchId1}, #{matchId2});
     </select>
     <delete id="deleteMatch" >
         DELETE FROM inno_odds.refactor_prematch WHERE id = #{matchId}
     </delete>
+    <select id="getMergeCandidatePair" resultType="lottery.gaming.model.vo.MatchIdPair">
+        SELECT a.id AS id_1, b.id AS id_2, a.tournament_id, a.home_id, a.away_id, a.scheduled, a.bet188_id, b.betradar_id
+        FROM (
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.scheduled, rp.bet188_id
+        FROM inno_odds.refactor_prematch rp
+        INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
+        INNER JOIN sport_info.categories c3 ON t.category_id = c3.id
+        WHERE rp.sport_id = #{sportId}
+        AND rp.scheduled_date = #{date}
+        AND rp.betradar_id is null
+        AND c3.id NOT IN (705, 801)
+        ) AS a
+        INNER JOIN (
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.scheduled, rp.betradar_id
+        FROM inno_odds.refactor_prematch rp
+        INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
+        INNER JOIN sport_info.categories c3 ON t.category_id = c3.id
+        WHERE rp.sport_id = #{sportId}
+        AND rp.scheduled_date = #{date}
+        AND rp.bet188_id is null
+        AND c3.id NOT IN (705, 801)
+        ) AS b ON a.tournament_id = b.tournament_id
+        AND a.home_id = b.home_id
+        AND a.away_id = b.away_id
+        AND a.scheduled = b.scheduled
+        ORDER BY a.tournament_id ASC;
+    </select>
 </mapper>

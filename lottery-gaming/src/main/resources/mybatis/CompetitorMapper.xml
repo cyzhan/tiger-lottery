@@ -9,4 +9,17 @@
             (#{item.id}, #{tournamentId}, 1, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP())
         </foreach>
     </insert>
+    <select id="getMainCompetitorInfo" resultType="lottery.gaming.model.vo.MainCompetitorRefVO">
+        SELECT c.id, c.name_cn, c.name_en, bc.name_en AS b_name_en, bc.name_cn AS b_name_cn, bc2.name_en AS a_name_en, 
+        bc2.name_cn  AS a_name_cn, bc.id AS b_id, bc2.id AS a_id, bc.age_group,  bc.gender
+        FROM sport_info.competitors c
+        LEFT JOIN sport_info.betradar_competitors bc ON c.id = bc.ref_id
+        LEFT JOIN sport_info.bet188_competitors bc2 ON c.id = bc2.ref_id
+        where c.sport_id = {sportId}
+        AND c.id IN
+       <foreach collection="array" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
 </mapper>
