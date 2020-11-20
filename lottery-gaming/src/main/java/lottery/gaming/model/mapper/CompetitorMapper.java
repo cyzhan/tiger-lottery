@@ -26,8 +26,14 @@ public interface CompetitorMapper {
 
     int insertMergeLog(List<Map<String, String>> logs);
 
-    List<CompetitorMergeIO> getMergeCandidateByHomeDiff(@Param("sportId") int sportId, @Param("date") String date);
+    List<CompetitorMergeIO> getMergeCandidateByHomeDiff(@Param("sportId") int sportId,
+                                                        @Param("date") String date,
+                                                        @Param("source1") String source1,
+                                                        @Param("source2") String source2);
 
-    List<CompetitorMergeIO> getMergeCandidateByAwayDiff(@Param("sportId") int sportId, @Param("date") String date);
+    List<CompetitorMergeIO> getMergeCandidateByAwayDiff(@Param("sportId") int sportId,
+                                                        @Param("date") String date,
+                                                        @Param("source1") String source1,
+                                                        @Param("source2") String source2);
 
 }

@@ -27,29 +27,30 @@
         FROM inno_odds.refactor_prematch rp
         WHERE id IN (#{matchId1}, #{matchId2});
     </select>
-    <delete id="deleteMatch" >
-        DELETE FROM inno_odds.refactor_prematch WHERE id = #{matchId}
-    </delete>
     <select id="getMergeCandidatePair" resultType="lottery.gaming.model.vo.MatchIdPair">
-        SELECT a.id AS id_1, b.id AS id_2, a.tournament_id, a.home_id, a.away_id, a.scheduled, a.bet188_id, b.betradar_id
+        SELECT a.id AS id_1, b.id AS id_2, a.tournament_id, a.home_id, a.away_id, a.scheduled, a.${source1}_id, b.${source2}_id
         FROM (
-        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.scheduled, rp.bet188_id, rp.betgenius_id
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.scheduled, rp.${source1}_id
         FROM inno_odds.refactor_prematch rp
         INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
         INNER JOIN sport_info.categories c3 ON t.category_id = c3.id
         WHERE rp.sport_id = #{sportId}
         AND rp.scheduled_date = #{date}
-        AND rp.betradar_id is null
+        AND rp.${source1}_id IS NOT NULL
+        AND rp.${source2}_id is NULL
+        AND rp.row_status = 1
         AND c3.id NOT IN (705, 801)
         ) AS a
         INNER JOIN (
-        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.scheduled, rp.betradar_id, rp.betgenius_id
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.scheduled, rp.${source2}_id
         FROM inno_odds.refactor_prematch rp
         INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
         INNER JOIN sport_info.categories c3 ON t.category_id = c3.id
         WHERE rp.sport_id = #{sportId}
         AND rp.scheduled_date = #{date}
-        AND rp.bet188_id is null
+        AND rp.${source2}_id IS NOT NULL
+        AND rp.${source1}_id is NULL
+        AND rp.row_status = 1
         AND c3.id NOT IN (705, 801)
         ) AS b ON a.tournament_id = b.tournament_id
         AND a.home_id = b.home_id
@@ -77,5 +78,4 @@
             #{item}
         </foreach>
     </update>
-
 </mapper>

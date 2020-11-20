@@ -13,8 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Component
 public class MatchService {
@@ -37,17 +39,28 @@ public class MatchService {
     }
 
     public int batchMergeByDate(int sportId, String date) {
-        List<MatchIdPair> matchIdPairs = matchMapper.getMergeCandidatePair(sportId, date);
+        List<String> sources = Arrays.stream(Source.values()).map(Source::value).collect(Collectors.toList());
+        int size = sources.size();
+        String source1 = "";
+        String source2 = "";
         int mergedMatchCount = 0;
-        for (MatchIdPair item : matchIdPairs) {
-            try {
-                if (item.getId1() > item.getId2()) {
-                    mergedMatchCount = mergedMatchCount + matchSubService.mergeToOneMatch(item.getId1(), item.getId2());
-                } else {
-                    mergedMatchCount = mergedMatchCount + matchSubService.mergeToOneMatch(item.getId2(), item.getId1());
+        List<MatchIdPair> matchIdPairs;
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size ; j++) {
+                source1 = sources.get(i);
+                source2 = sources.get(j);
+                matchIdPairs = matchMapper.getMergeCandidatePair(sportId, date, source1, source2);
+                for (MatchIdPair item : matchIdPairs) {
+                    try {
+                        if (item.getId1() > item.getId2()) {
+                            mergedMatchCount = mergedMatchCount + matchSubService.mergeToOneMatch(item.getId1(), item.getId2());
+                        } else {
+                            mergedMatchCount = mergedMatchCount + matchSubService.mergeToOneMatch(item.getId2(), item.getId1());
+                        }
+                    } catch (Exception e) {
+                        logger.error(e.getMessage());
+                    }
                 }
-            } catch (Exception e) {
-                logger.error(e.getMessage());
             }
         }
         return mergedMatchCount;

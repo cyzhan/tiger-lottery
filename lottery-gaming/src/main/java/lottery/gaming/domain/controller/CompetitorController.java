@@ -37,7 +37,7 @@ public class CompetitorController {
      *  聯賽/開賽時間/客隊相同/主隊不同 => 主隊必為同一球隊, 進行整合
      */
     @PutMapping(path = {"merge/sport/{sportId}/date/{date}"}, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Mono<ResultVO> merge(@PathVariable("sportId") int sportId, @PathVariable("date") String date) throws Exception {
+    public Mono<ResultVO> mergeByDate(@PathVariable("sportId") int sportId, @PathVariable("date") String date) throws Exception {
         try {
             sdf.parse(date);
         }catch (Exception e){

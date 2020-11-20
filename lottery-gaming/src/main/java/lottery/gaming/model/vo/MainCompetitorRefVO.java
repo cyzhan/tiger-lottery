@@ -8,21 +8,29 @@ public class MainCompetitorRefVO {
 
     private String nameEn;
 
+    private String aNameCn;
+
+    private String aNameEn;
+
     private String bNameCn;
 
     private String bNameEn;
 
-    private String aNameCn;
-
-    private String aNameEn;
+    private String cNameEn;
 
     private Integer aId;
 
     private Integer bId;
 
-    private String ageGroup;
+    private Integer cId;
 
-    private String gender;
+    private String bAgeGroup;
+
+    private String bGender;
+
+    private String cAgeCategory;
+
+    private String cGender;
 
     public int getId() {
         return id;
@@ -96,19 +104,52 @@ public class MainCompetitorRefVO {
         this.bId = bId;
     }
 
-    public String getAgeGroup() {
-        return ageGroup;
+    public String getbAgeGroup() {
+        return bAgeGroup;
     }
 
-    public void setAgeGroup(String ageGroup) {
-        this.ageGroup = ageGroup;
+    public void setbAgeGroup(String bAgeGroup) {
+        this.bAgeGroup = bAgeGroup;
     }
 
-    public String getGender() {
-        return gender;
+    public String getbGender() {
+        return bGender;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setbGender(String bGender) {
+        this.bGender = bGender;
     }
+
+    public String getcAgeCategory() {
+        return cAgeCategory;
+    }
+
+    public void setcAgeCategory(String cAgeCategory) {
+        this.cAgeCategory = cAgeCategory;
+    }
+
+    public String getcGender() {
+        return cGender;
+    }
+
+    public void setcGender(String cGender) {
+        this.cGender = cGender;
+    }
+
+    public Integer getcId() {
+        return cId;
+    }
+
+    public void setcId(Integer cId) {
+        this.cId = cId;
+    }
+
+    public String getcNameEn() {
+        return cNameEn;
+    }
+
+    public void setcNameEn(String cNameEn) {
+        this.cNameEn = cNameEn;
+    }
+
 }

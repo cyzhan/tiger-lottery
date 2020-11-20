@@ -67,6 +67,7 @@ public class MatchSubService {
 
         int updateRow = matchMapper.updateMatch(matchId1, matchVO2);
         int deleteRow = matchMapper.deleteMatch(matchId2);
+//        int deleteRow = matchMapper.softDelete(matchId2);
         logger.info("updateRow = {}, deletedRow = {}", updateRow, deleteRow);
         return 1;
     }
