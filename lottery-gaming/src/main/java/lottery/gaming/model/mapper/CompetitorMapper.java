@@ -18,7 +18,7 @@ public interface CompetitorMapper {
 
     List<MainCompetitorRefVO> getMainCompetitorInfo(@Param("sportId") int sportId, @Param("competitors") int...competitorIds);
 
-    @Update("UPDATE sport_info.${table} SET ref_id = #{refId} WHERE id = #{id}")
+    @Update("UPDATE sport_info.${table} SET ref_id = #{refId}, version = version + 1 WHERE id = #{id}")
     int updateRefId(@Param("table")String table, @Param("id") int id, @Param("refId") int refId);
 
     @Delete("DELETE FROM sport_info.competitors WHERE id = #{competitorId}")

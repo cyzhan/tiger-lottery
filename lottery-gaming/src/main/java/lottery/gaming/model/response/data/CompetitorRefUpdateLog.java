@@ -3,6 +3,7 @@ package lottery.gaming.model.response.data;
 import lottery.gaming.model.vo.MainCompetitorRefVO;
 
 import java.util.List;
+import java.util.Map;
 
 public class CompetitorRefUpdateLog {
 
@@ -11,6 +12,8 @@ public class CompetitorRefUpdateLog {
     private MainCompetitorRefVO updatedData;
 
     private MainCompetitorRefVO deletedData;
+
+    private Map<String, Integer> refIdChanged;
 
     public List<MainCompetitorRefVO> getBeforeData() {
         return beforeData;
@@ -34,6 +37,14 @@ public class CompetitorRefUpdateLog {
 
     public void setDeletedData(MainCompetitorRefVO deletedData) {
         this.deletedData = deletedData;
+    }
+
+    public Map<String, Integer> getRefIdChanged() {
+        return refIdChanged;
+    }
+
+    public void setRefIdChanged(Map<String, Integer> refIdChanged) {
+        this.refIdChanged = refIdChanged;
     }
 
 }

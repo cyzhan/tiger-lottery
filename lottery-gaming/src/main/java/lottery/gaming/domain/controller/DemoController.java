@@ -33,6 +33,7 @@ public class DemoController {
     private ObjectMapper objectMapper;
 
     @Autowired
+    @Qualifier("betradar")
     private WebClient webClient;
 
     @Autowired

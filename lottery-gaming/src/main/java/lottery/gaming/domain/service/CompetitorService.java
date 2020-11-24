@@ -43,11 +43,14 @@ public class CompetitorService {
         String source1 = "";
         String source2 = "";
         List<CompetitorMergeIO> list = null;
-        List<Integer> mergeIds = new ArrayList<>();
         List<Map<String,String>> logs = new ArrayList<>();
         Map<String, String> log;
         ResultVO resultVO;
         CompetitorRefUpdateLog competitorRefUpdateLog;
+        Map<String, List<Integer>> refIdUpdated = new HashMap<>();
+        refIdUpdated.put(Source.A.value(), new ArrayList<>());
+        refIdUpdated.put(Source.B.value(), new ArrayList<>());
+        refIdUpdated.put(Source.C.value(), new ArrayList<>());
         for (int i = 0; i < sources.size(); i++) {
             for (int j = i + 1; j < size; j++) {
                 source1 = sources.get(i);
@@ -63,12 +66,21 @@ public class CompetitorService {
                         resultVO = competitorSubService.mergeCompetitors(competitorMergeIO);
                         if (resultVO.getCode() == 1 && resultVO.getData() instanceof CompetitorRefUpdateLog) {
                             competitorRefUpdateLog = (CompetitorRefUpdateLog) resultVO.getData();
-                            mergeIds.add(competitorRefUpdateLog.getUpdatedData().getId());
                             log = new HashMap<>();
                             log.put("before", objectMapper.writeValueAsString(competitorRefUpdateLog.getBeforeData()));
                             log.put("updated", objectMapper.writeValueAsString(competitorRefUpdateLog.getUpdatedData()));
                             log.put("deleted", objectMapper.writeValueAsString(competitorRefUpdateLog.getDeletedData()));
                             logs.add(log);
+
+                            if (competitorRefUpdateLog.getRefIdChanged().get(Source.A.value()) != null){
+                                refIdUpdated.get(Source.A.value()).add(competitorRefUpdateLog.getRefIdChanged().get(Source.A.value()));
+                            }
+                            if (competitorRefUpdateLog.getRefIdChanged().get(Source.B.value()) != null){
+                                refIdUpdated.get(Source.B.value()).add(competitorRefUpdateLog.getRefIdChanged().get(Source.B.value()));
+                            }
+                            if (competitorRefUpdateLog.getRefIdChanged().get(Source.C.value()) != null){
+                                refIdUpdated.get(Source.C.value()).add(competitorRefUpdateLog.getRefIdChanged().get(Source.C.value()));
+                            }
                         }
                     } catch (Exception e) {
                         logger.error(e.getMessage());
@@ -79,37 +91,10 @@ public class CompetitorService {
         if (logs.size() > 0){
             competitorMapper.insertMergeLog(logs);
         }
-//        List<CompetitorMergeIO> list = competitorMapper.getMergeCandidateByHomeDiff(sportId, date);
-//        list.addAll(competitorMapper.getMergeCandidateByAwayDiff(sportId, date));
-//        if (list.size() == 0){
-//            return ResultVO.error(404, "無可整併的隊伍");
-//        }
-//        List<Integer> mergeIds = new ArrayList<>();
-//        List<Map<String,String>> logs = new ArrayList<>();
-//        Map<String, String> log;
-//        ResultVO resultVO;
-//        CompetitorRefUpdateLog competitorRefUpdateLog;
-//        for (CompetitorMergeIO competitorMergeIO : list) {
-//            try {
-//                resultVO = competitorSubService.mergeCompetitors(competitorMergeIO);
-//                if (resultVO.getCode() == 1 && resultVO.getData() instanceof CompetitorRefUpdateLog) {
-//                  competitorRefUpdateLog = (CompetitorRefUpdateLog) resultVO.getData();
-//                    mergeIds.add(competitorRefUpdateLog.getUpdatedData().getId());
-//                    log = new HashMap<>();
-//                    log.put("before", objectMapper.writeValueAsString(competitorRefUpdateLog.getBeforeData()));
-//                    log.put("updated", objectMapper.writeValueAsString(competitorRefUpdateLog.getUpdatedData()));
-//                    log.put("deleted", objectMapper.writeValueAsString(competitorRefUpdateLog.getDeletedData()));
-//                    logs.add(log);
-//                }
-//            } catch (Exception e) {
-//                logger.error(e.getMessage());
-//            }
-//        }
-//        if (logs.size() > 0){
-//            competitorMapper.insertMergeLog(logs);
-//        }
 
-        return ResultVO.of(mergeIds);
+        //Todo
+        //competitorSubService.publishRefIdUpdatedEvent(refIdUpdated);
+        return ResultVO.of(refIdUpdated);
     }
 
 }

@@ -28,45 +28,53 @@
     <select id="getMergeCandidateByHomeDiff" resultType="lottery.gaming.model.io.CompetitorMergeIO">
         SELECT ${sportId} AS sportId, a.home_id AS competitorId1, b.home_id AS competitorId2
         FROM (
-        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source1}_id, rp.scheduled
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source1}_id, UNIX_TIMESTAMP(rp.scheduled) AS `timestamp`
         FROM inno_odds.refactor_prematch rp
+        INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
         WHERE rp.sport_id = #{sportId}
         AND rp.scheduled_date  = #{date}
+        AND t.category_id NOT IN (750, 801)
         AND rp.${source2}_id IS NULL
         AND rp.${source1}_id IS NOT NULL
         ) AS a INNER JOIN (
-        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source2}_id, rp.scheduled
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source2}_id, UNIX_TIMESTAMP(rp.scheduled) AS `timestamp`
         FROM inno_odds.refactor_prematch rp
+        INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
         WHERE rp.sport_id = #{sportId}
         AND rp.scheduled_date  = #{date}
+        AND t.category_id NOT IN (750, 801)
         AND rp.${source1}_id IS NULL
         AND rp.${source2}_id IS NOT NULL
         ) AS b ON a.tournament_id = b.tournament_id
         AND a.home_id &lt;&gt; b.home_id
         AND a.away_id = b.away_id
-        AND a.scheduled = b.scheduled;
+        AND (a.`timestamp` - b.`timestamp`) BETWEEN -1800 AND 1800;
     </select>
 
     <select id="getMergeCandidateByAwayDiff" resultType="lottery.gaming.model.io.CompetitorMergeIO">
         SELECT ${sportId} AS sportId, a.away_id AS competitorId1, b.away_id AS competitorId2
         FROM (
-        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source1}_id, rp.scheduled
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source1}_id, UNIX_TIMESTAMP(rp.scheduled) AS `timestamp`
         FROM inno_odds.refactor_prematch rp
+        INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
         WHERE rp.sport_id = #{sportId}
         AND rp.scheduled_date  = #{date}
+        AND t.category_id NOT IN (750, 801)
         AND rp.${source2}_id IS NULL
         AND rp.${source1}_id IS NOT NULL
         ) AS a INNER JOIN (
-        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source2}_id, rp.scheduled
+        SELECT rp.id, rp.tournament_id, rp.home_id, rp.away_id, rp.${source2}_id, UNIX_TIMESTAMP(rp.scheduled) AS `timestamp`
         FROM inno_odds.refactor_prematch rp
+        INNER JOIN sport_info.tournaments t ON rp.tournament_id = t.id
         WHERE rp.sport_id = #{sportId}
         AND rp.scheduled_date  = #{date}
+        AND t.category_id NOT IN (750, 801)
         AND rp.${source1}_id IS NULL
         AND rp.${source2}_id IS NOT NULL
         ) AS b ON a.tournament_id = b.tournament_id
         AND a.home_id = b.home_id
         AND a.away_id &lt;&gt; b.away_id
-        AND a.scheduled = b.scheduled;
+        AND (a.`timestamp` - b.`timestamp`) BETWEEN -1800 AND 1800;
     </select>
     <insert id="insertMergeLog" parameterType="lottery.gaming.model.response.data.CompetitorRefUpdateLog">
         INSERT INTO inno_odds.competitor_merge_log_tmp

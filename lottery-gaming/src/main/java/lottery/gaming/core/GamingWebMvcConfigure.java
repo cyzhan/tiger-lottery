@@ -53,10 +53,15 @@ public class GamingWebMvcConfigure implements WebMvcConfigurer {
         return redisTemplate;
     }
 
-    @Bean
+    @Bean("betradar")
     public WebClient getWebClient(){
 //        return WebClient.create("http://localhost:8080");
         return WebClient.create("https://api.betradar.com");
+    }
+
+    @Bean("lekima-console")
+    public WebClient getWebClientForConsole(){
+        return WebClient.create("https://api-lekima-demo.ceshi22.com");
     }
 
     @Bean("xmlMapper")
