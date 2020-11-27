@@ -38,7 +38,6 @@
         AND rp.scheduled_date = #{date}
         AND rp.${source1}_id IS NOT NULL
         AND rp.${source2}_id is NULL
-        AND rp.row_status = 1
         AND c3.id NOT IN (705, 801)
         ) AS a
         INNER JOIN (
@@ -50,7 +49,6 @@
         AND rp.scheduled_date = #{date}
         AND rp.${source2}_id IS NOT NULL
         AND rp.${source1}_id is NULL
-        AND rp.row_status = 1
         AND c3.id NOT IN (705, 801)
         ) AS b ON a.tournament_id = b.tournament_id
         AND a.home_id = b.home_id

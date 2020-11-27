@@ -46,8 +46,7 @@ public class MatchSubService {
         }
         if (matchVO1.getBetgeniusId() != null && matchVO2.getBetgeniusId() != null){
             return 0;
-        }
-        String sourceTable = "";
+        }        String sourceTable = "";
         if (matchVO1.getBet188Id() == null && matchVO2.getBet188Id() != null){
             sourceTable = "refactor_bet188_prematch";
             matchMapper.updateSourceMatchRef("refactor_bet188_prematch", matchId2, matchId1);
@@ -64,9 +63,8 @@ public class MatchSubService {
             logger.info("update table = {}, id ={}, ref_id from {} to {}", sourceTable, matchVO2.getBetgeniusId(), matchId2, matchId1);
         }
 
-
-        int updateRow = matchMapper.updateMatch(matchId1, matchVO2);
         int deleteRow = matchMapper.deleteMatch(matchId2);
+        int updateRow = matchMapper.updateMatch(matchId1, matchVO2);
 //        int deleteRow = matchMapper.softDelete(matchId2);
         logger.info("updateRow = {}, deletedRow = {}", updateRow, deleteRow);
         return 1;
